@@ -22,7 +22,6 @@ export default {
 
 <style>
 svg.icon {
-  position: relative;
   width: 1em;
 	height: 1em;
   vertical-align: middle;
