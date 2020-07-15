@@ -1,5 +1,7 @@
 <template>
-  <svg class="icon" :class="{ 'icon-spin': spin }"><use :xlink:href="`#${icon}`" /></svg>
+  <svg class="icon" :class="{ 'icon-spin': spin }">
+    <use :xlink:href="`#${icon}`" />
+  </svg>
 </template>
 
 <script>
