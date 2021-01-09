@@ -1,11 +1,12 @@
 <template>
-	<svg width="0" height="0" style="display: none;" v-html="$options.svgSprite" />
+	<svg width="0" height="0" style="width: 0; height: 0;" v-html="$options.svgSprite" />
 </template>
 
 <script>
 const svgContext = require.context(
 	'!svg-inline-loader?' + 
-  'removeTags=true' + // remove title tags, etc.
+  'removeTags=true' + // enable removing tags, but ...
+  'removingTags=title' + // just remove title tags
 	'!@/assets/icons', // search this directory
 	true, // search subdirectories
 	/\w+\.svg$/i // only include SVG files

@@ -29,6 +29,10 @@
       <svg-icon icon="love" allow-fill />
       The heart SVG is using its own <code>fill</code> color!
     </p>
+    <p>
+      <svg-icon icon="gradient" allow-fill />
+      This SVG has `defs`
+    </p>
   </div>
 </template>
 
