@@ -1,5 +1,5 @@
 <template>
-  <svg class="icon" :class="{ 'icon-spin': spin }">
+  <svg class="icon" :class="{ 'icon-spin': spin, 'fill-current': !allowFill }">
     <use :xlink:href="`#${icon}`" />
   </svg>
 </template>
@@ -15,7 +15,11 @@ export default {
 		spin: {
 			type: Boolean,
 			default: false,
-		},
+    },
+    allowFill: {
+      type: Boolean,
+      default: false,
+    }
 	},
 }
 </script>
@@ -26,7 +30,10 @@ svg.icon {
 	height: 1em;
   vertical-align: middle;
   margin-bottom: 0.125em;
-	fill: currentColor;
+}
+
+svg.icon.fill-current, svg.icon.fill-current * {
+  fill: currentColor;
 }
 
 svg.icon-spin {

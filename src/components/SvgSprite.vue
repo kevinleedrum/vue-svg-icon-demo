@@ -5,9 +5,7 @@
 <script>
 const svgContext = require.context(
 	'!svg-inline-loader?' + 
-	'removeTags=true' + // remove title tags, etc.
-	'&removeSVGTagAttrs=true' + // enable removing attributes
-	'&removingTagAttrs=fill' + // remove fill attributes
+  'removeTags=true' + // remove title tags, etc.
 	'!@/assets/icons', // search this directory
 	true, // search subdirectories
 	/\w+\.svg$/i // only include SVG files

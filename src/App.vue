@@ -25,6 +25,10 @@
       <svg-icon icon="exclamation" />
       Something went wrong.
     </p>
+    <p>
+      <svg-icon icon="love" allow-fill />
+      The heart SVG is using its own <code>fill</code> color!
+    </p>
   </div>
 </template>
 
